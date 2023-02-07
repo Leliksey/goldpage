@@ -105,6 +105,10 @@ module.exports = {
           from: './assets/data/manifest.json',
           to: "manifest.json"
         },
+        { 
+          from: './assets/fonts/adobeinvisfont.ttf',
+          to: "./fonts/[name].ttf"
+        }
       ],   
     }),
     new BrowserSyncPlugin({

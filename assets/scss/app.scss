@@ -5,20 +5,14 @@
 
 @import './includes/functions.scss';
 
-//header
+
 @import './includes/blocks/header/header.scss';
-
-//main
+@import './includes/blocks/social/social.scss';
+@import './includes/blocks/menu/menu.scss';
 @import './includes/blocks/main/main.scss';
+@import './includes/blocks/components/component.scss';
 
-//footer
-@import './includes/blocks/footer/footer.scss';
 
-//experience
-@import './includes/blocks/experience/experience.scss';
-
-//whyUs
-@import './includes/blocks/whyUs/whyUs.scss';
 
 
 
