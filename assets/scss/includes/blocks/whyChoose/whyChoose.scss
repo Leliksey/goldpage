@@ -1,0 +1,124 @@
+.whyChoose {
+    background: #f5f5f5;
+    padding: 72px 0 0;
+    @include max-xlmidle {
+        padding: 50px 0 0;
+    }
+    @include max-sm {
+        padding: 20px 0 0;
+    }
+    &__content {
+        background-color: #fff;
+        padding: 40px 30px;
+        position: relative;
+        border: 1px solid #e2e2e2;
+        box-shadow: 0px 26px 50px rgba(205, 205, 205, 0.25);
+        border-radius: 8px;
+        @include max-md {
+            padding: 20px 0 40px 20px;
+            overflow: hidden;
+        }
+        @include max-sm {
+            padding: 20px 0 0 20px;
+            overflow: hidden;
+        }
+    }
+    &__title {
+    }
+    &__description {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #252530;
+        margin-top: 15px;
+        @include max-sm {
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+    &__list {
+        margin-top: 37px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        @include max-sm {
+            margin-top: 20px;
+        }
+    }
+    &__item {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+        display: flex;
+        align-items: center;
+        &::before {
+            content: "";
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+        }
+        &:nth-child(1)::before {
+            background-image: url(../images/whyChoose_wallet.png);
+        }
+        &:nth-child(2)::before {
+            background-image: url(../images/whyChoose_check.png);
+        }
+        &:nth-child(3)::before {
+            background-image: url(../images/whyChoose_arrow.png);
+        }
+        &:nth-child(4)::before {
+            background-image: url(../images/whyChoose_people.png);
+        }
+    }
+    &__img {
+        max-width: 47%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-image: url(../images/whyChoose_bg.png);
+        background-size: cover;
+        width: 50vw;
+        height: 397px;
+        background-repeat: no-repeat;
+        @include max-xlmidle {
+            height: 100%;
+            max-width: 57%;
+        }
+        @include max-sm {
+            position: relative;
+            max-width: 100%;
+            width: 100vw;
+            height: initial;
+        }
+        & img {
+            position: absolute;
+            bottom: 0;
+            right: -20px;
+            min-width: 640px;
+            max-width: 640px;
+            @include max-xlmidle {
+                min-width: 600px;
+            }
+            @include max-xl {
+                min-width: 50vw;
+            }
+            @include max-lg {
+                min-width: 56vw;
+            }
+            @include max-sm {
+                position: relative;
+                margin-top: 54px;
+                left: -35px;
+                min-width: 110vw;
+                top: 4px;
+            }
+        }
+    }
+}

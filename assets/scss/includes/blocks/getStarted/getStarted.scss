@@ -1,0 +1,140 @@
+.getStarted {
+    background: #f5f5f5;
+    & .container {
+        @include max-sm {
+            padding: 0 15px;
+        }
+    }
+    &__content {
+        padding: 70px 0 0;
+        @include max-xlmidle {
+            padding: 42px 0 0;
+        }
+        @include max-md {
+            padding: 22px 0 0;
+        }
+    }
+    &__title {
+        text-align: center;
+        @include max-xlmidle {
+            text-align: left;
+        }
+        &_green {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 38px;
+            text-align: center;
+            color: #ffffff;
+            padding: 8px 23px;
+            margin: 4px auto 0;
+            background: #00b67a;
+            border-radius: 4px;
+            width: max-content;
+            @include max-xlmidle {
+                margin: 4px 0 0;
+            }
+            @include max-md {
+                font-size: 20px;
+                line-height: 23px;
+            }
+        }
+    }
+
+    &__items {
+        display: flex;
+        align-items: center;
+        column-gap: 12px;
+        row-gap: 27px;
+        margin-top: 34px;
+        @include max-xxl {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 24px;
+        }
+        @include max-lg {
+            column-gap: 16px;
+            row-gap: 18px;
+        }
+        @include max-md {
+            margin-top: 18px;
+            row-gap: 6px;
+            column-gap: 10px;
+            grid-template-columns: 1fr 1fr;
+        }
+        @include max-sm {
+            margin-top: 18px;
+            row-gap: 6px;
+            grid-template-columns: 1fr;
+        }
+    }
+    &__item {
+        padding: 20px 18px;
+        background: #ffffff;
+        border: 1px solid #e2e2e2;
+        box-shadow: 0px 4px 21px rgba(191, 191, 191, 0.25);
+        border-radius: 4px;
+        width: 100%;
+        min-height: 171px;
+        max-height: 171px;
+        @include max-xxl {
+            min-width: 100%
+        }
+        @include max-md {
+            min-height: 120px;
+            max-height: 120px;
+        }
+        @include max-sm {
+            min-height: auto;
+            max-height: initial;
+        }
+        &-box {
+            display: flex;
+            flex-direction: column;
+            @include max-md {
+                flex-direction: row;
+                align-items: center;
+            }
+        }
+        &-count {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            color: #ffffff;
+            background: #ed3173;
+            border-radius: 3px;
+            width: max-content;
+            padding: 8px 13px;
+        }
+        &-title {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            color: #000000;
+            margin-top: 10px;
+            @include max-md {
+                font-size: 20px;
+                line-height: 23px;
+                margin: 0 0 0 10px;
+            }
+        }
+        &-description {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: #252530;
+            margin-top: 10px;
+            @include max-md {
+            }
+        }
+    }
+    
+}

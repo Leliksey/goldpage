@@ -1,9 +1,9 @@
-*{
+* {
 	margin: 0;
 	padding: 0;
 	border: 0;
 	box-sizing: border-box;
-	font-family: 'adobeinvisfont', sans-serif;
+	// font-family: 'adobeinvisfont', sans-serif;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -20,23 +20,10 @@ section {
 	display: block;
 }
 body {
-	
-	
 }
 ol,
 ul {
 	list-style: none;
-}
-blockquote,
-q {
-	quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-	content: "";
-	content: none;
 }
 table {
 	border-collapse: collapse;
@@ -69,34 +56,41 @@ button {
 .revert45 {
 	transform: rotateZ(45deg);
 }
+.blockTitle {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 44px;
+	line-height: 52px;
+	color: #000000;
+	@include max-md {
+		font-size: 24px;
+		line-height: 28px;
+	}
+}
 .container {
 	margin: auto;
-	max-width: 1280px;
-	// @include max-xxl {
-	// 	max-width: 1440px;
-	// 	width: 100%;
-	// 	margin: 0 auto;
-	// 	padding: 0 40px;
-	// }
-	// @include max-lg {
-	// 	padding: 0 20px;
-	// }
-	// @include max-sm {
-	// 	padding: 0 20px;
-	// }
+	max-width: 1440px;
+	padding: 0 130px;
+	width: 100%;
+	@include max-xlmidle {
+		max-width: 1024px;
+		padding: 0 56px;
+	}
+	@include max-md {
+		padding: 0 10px;
+	}
 }
-// .owl-carousel .owl-stage-outer {
-// 	max-width: calc(300px + (1080 - 300) * ((100vw - 375px) / (1920 - 375)));
-// 	@include max-xxl {
-// 		max-width: calc(300px + (1088 - 300) * ((100vw - 375px) / (1920 - 375)));
-// 	}
-// 	@include max-xl {
-// 		max-width: calc(135px + (1080 - 135) * ((100vw - 375px) / (1920 - 375)));
-// 	}
-// 	@include max-lg {
-// 		max-width: calc(80px + (1080 - 80) * ((100vw - 375px) / (1920 - 375)));
-// 	}
-// 	@include max-md {
-// 		max-width: 100%;
-// 	}
-// }
+.container2 {
+	margin: auto;
+	max-width: 1440px;
+	padding: 0 99px;
+	width: 100%;
+	@include max-xlmidle {
+		max-width: 1024px;
+		padding: 0 56px;
+	}
+	@include max-md {
+		padding: 0 8px;
+	}
+}

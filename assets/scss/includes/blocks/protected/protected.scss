@@ -1,0 +1,77 @@
+.protected {
+    &__content {
+        background: #ffffff;
+        border: 1px solid #e2e2e2;
+        border-bottom: none;
+        box-shadow: 0px 26px 50px rgba(205, 205, 205, 0.25);
+        border-radius: 8px 8px 0 0;
+        padding: 40px 31px 32px;
+        margin-top: -20px;
+        background-image: url(../images/comp.png);
+        background-repeat: no-repeat;
+        background-size: 45%;
+        background-repeat: no-repeat;
+        background-position: 97% 30px;
+        @include max-xlmidle {
+            background-size: 70%;
+            background-position: 105% 35px;
+        }
+        @include max-lg {
+            background-size: 50%;
+            background-position: 105% 120px;
+        }
+        @include max-md {
+            background-position: 100% 70px;
+        }
+        @include max-sm {
+            background-position: 100% 100%;
+            background-size: 100%;
+            min-height: 465px;
+            padding: 20px;
+        }
+        @include max-iph {
+            min-height: 425px;
+        }
+    }
+    &__title {
+        max-width: 560px;
+    }
+    &__description {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #252530;
+        margin-top: 15px;
+    }
+    &__list {
+    }
+    &__item {
+    }
+    &__brands {
+        display: flex;
+        align-items: center;
+        column-gap: 30px;
+        padding: 25px 65px 25px 32px;
+        background: #ffffff;
+        box-shadow: 0px -18px 85px rgba(0, 0, 0, 0.1);
+        border-radius: 0 0 8px 8px;
+        border: 1px solid #e2e2e2;
+        border-top: none;
+        @include max-xlmidle {
+            padding-right: 32px;
+        }
+        @include max-lg {
+            flex-wrap: wrap;
+            row-gap: 15px;
+            padding: 20px;
+        }
+    }
+    &__brand {
+        max-width: 165px;
+        @include max-lg {
+            max-width: 55px;
+        }
+    }
+}

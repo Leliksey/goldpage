@@ -115,7 +115,7 @@ module.exports = {
       files: ["build/css/app.css", "build/[name].html", "build/js/app.js" ],
       host: 'localhost',
       port: 3000,
-      server: { baseDir: ['./build'], index: "index.html" }
+      server: { baseDir: ['./build'], index: "pageGold.html" }
     }),
     new MiniCssExtractPlugin({
       filename: "css/[name].css"

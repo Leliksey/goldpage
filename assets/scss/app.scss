@@ -1,16 +1,14 @@
-@import './includes/variables.scss';
 @import './includes/mixins.scss';
 @import './includes/fonts.scss';
 @import './includes/reset.scss';
 
-@import './includes/functions.scss';
-
-
-@import './includes/blocks/header/header.scss';
-@import './includes/blocks/social/social.scss';
-@import './includes/blocks/menu/menu.scss';
-@import './includes/blocks/main/main.scss';
-@import './includes/blocks/components/component.scss';
+@import './includes/blocks/pageTop/pageTop.scss';
+@import './includes/blocks/customFilter/customFilter.scss';
+@import './includes/blocks/getStarted/getStarted.scss';
+@import './includes/blocks/whyChoose/whyChoose.scss';
+@import './includes/blocks/goldFAQ/goldFAQ.scss';
+@import './includes/blocks/protected/protected.scss';
+@import './includes/blocks/question/question.scss';
 
 
 
