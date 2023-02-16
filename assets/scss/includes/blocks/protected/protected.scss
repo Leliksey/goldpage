@@ -1,4 +1,7 @@
 .protected {
+    @include max-sm {
+        margin-top: 16px;
+    }
     &__content {
         background: #ffffff;
         border: 1px solid #e2e2e2;
@@ -19,6 +22,7 @@
         @include max-lg {
             background-size: 50%;
             background-position: 105% 120px;
+            margin-top: 0;
         }
         @include max-md {
             background-position: 100% 70px;

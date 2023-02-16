@@ -1,0 +1,114 @@
+.anyQuestion {
+    padding: 44px 0;
+    @include max-md {
+        padding: 16px 0;
+    }
+    &__content {
+        background: #ffffff;
+        border: 1px solid #e2e2e2;
+        box-shadow: 0px 26px 50px rgba(205, 205, 205, 0.25);
+        border-radius: 8px;
+        padding: 36px 38px 36px 32px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-image: url(../images/anyQuestion_bg.png);
+        background-size: 37%;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        position: relative;
+        @include max-xlmidle {
+            background-size: 50%;
+            background-position: right bottom;
+            flex-direction: column;
+            align-items: flex-start;
+            overflow: hidden;
+        }
+        @include max-md {
+            padding: 20px;
+           
+        }
+        @include max-sm {
+             min-height: 437px;
+            justify-content: initial;
+            background-size: 115%;
+            background-position: left bottom;
+        }
+    }
+    &__text {
+        max-width: 282px;
+    }
+    &__title {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        color: #000000;
+    }
+    &__description {
+        margin-top: 8px;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #444444;
+        @include max-md {
+            font-size: 15px;
+            line-height: 18px;
+        }
+    }
+    &__img {
+        max-width: 661px;
+        bottom: -4px;
+        left: 10%;
+        right: 0;
+        margin: auto;
+        position: absolute;
+        @include max-xlmidle {
+            left: initial;
+            right: -10%;
+            max-width: 730px;
+        }
+        @include max-xl {
+            max-width: 70vw;
+        }
+        @include max-md {
+            max-width: 80vw;
+        }
+        @include max-sm {
+            min-width: 210%;
+            left: -20%;
+        }
+        @include max-iph {
+            min-width: 250%;
+        }
+    }
+    &__button {
+        padding: 15px 40px;
+        background: #00b67a;
+        font-family: "Roboto";
+        border-radius: 4px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        color: #ffffff;
+        z-index: 1;
+        @include max-xlmidle {
+            margin-top: 20px;
+        }
+        @include max-md {
+            font-size: 16px;
+            line-height: 19px;
+        }
+        @include max-sm {
+            margin-top: 13px;
+        }
+        &:hover {
+            transform: scale(1.05);
+            transition: 0.2s;
+        }
+    }
+}
